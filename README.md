@@ -2,9 +2,9 @@
 A demo project POC implementing a login page that contains users' and corresponding article information with Security Implementations and Rest CRUD.
 
 ## To use this project:
-### 1. Clone the project to your local environment and import it into your IDE (personally I use Eclipse). Right click on project in eclipse and then Maven -> Update Projects
+#### 1. Clone the project to your local environment and import it into your IDE (personally I use Eclipse). Right click on project in eclipse and then Maven -> Update Projects
 
-### 2. Update application.properties with your local database information.
+#### 2. Update application.properties with your local database information.
 ```
 spring.datasource.url=jdbc:mysql://localhost:3306/<yourdbname>
 spring.datasource.username=root
@@ -25,7 +25,7 @@ logging.level.org.hibernate.SQL=DEBUG
 logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
 ```
 
-### 3. Configure your MySQL database. Here are the lines I used
+#### 3. Configure your MySQL database. Here are the lines I used
 ```
 -- Dumping structure for table concretepage.articles
 CREATE TABLE IF NOT EXISTS `articles` (
@@ -58,10 +58,10 @@ INSERT INTO `users` (`username`, `password`, `full_name`, `role`, `country`, `en
 	('Jane', 'jane1234', 'Jane Holland', 'ROLE_USER', 'USA', 1); 
 ```
 
-### 4. After finishing configuration, right click on the project and run as Spring Boot App.
+#### 4. After finishing configuration, right click on the project and run as Spring Boot App.
 
 ## The following Endpoints can be called using POSTMAN
-### To get the list of articles of the logged-in user
+#### To get the list of articles of the logged-in user
 ```
 http://localhost:8080/user/articles
 ```
